@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+    .img-container
+    {
+        float: left;
+        width: 33.33%;
+        padding: 0px;
+        margin: 20px;
+    }
+    .clearfix::after
+    {
+        content:"";
+        clear: both;
+        display: table;
+    }
+    </style>
+</head>
+<body>
+    <h1>image side by side  </h1>
+    <p>Float image side by side  </p>
+    <div class="clearfix">
+        <div class="img-container">
+
+            <img src="obaid2.jpg.jpg" alt="oabid kahid minhas " style=" width: 340px;">
+        </div>
+        
+        <div="img-container">
+            <img src="obaid1.jpg.jpg" alt="obaid khalid minhas" style=" width: 340px;">
+        </div>
+        
+        <div class="img-container">
+            <img src="image.jpg.jpg" alt="obaid khaid minhas " style=" width: 340px;">
+        </div>
+
+    </div>
+    <p><strong>Note</strong>
+        Note that we also use the clearfix hack to take care of the layout flow, and that we add the box-sizing property to make sure that the image container doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+    
+</body>
+</html>
